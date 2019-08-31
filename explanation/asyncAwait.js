@@ -1,4 +1,4 @@
-async function requestHandlres() {
+async function requestHandlers(req, res) {
     try {
         const user = await user.findeById(req.userId);
         const tasks = await Task.findeById(user.taskId);
